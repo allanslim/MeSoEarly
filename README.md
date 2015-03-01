@@ -1,4 +1,4 @@
-node-scheduler-demo
+MeSoEarly
 ===================
 
 Demo of dhtmlxScheduler with NodeJs + MongoDB as backend
