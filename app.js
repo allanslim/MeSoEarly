@@ -15,6 +15,15 @@ app.get('/rooms', function(req, res) {
     res.render('rooms', {title: 'Hulk', rooms: ['Spiderman','Hawkeye','Black Widow']});
 });
 
+app.get('/information', function(req, res) { 
+    res.render('rooms', {title: 'Hulk', rooms: ['Spiderman','Hawkeye','Black Widow']});
+});
+
+app.get('/peek', function(req, res) { 
+    res.render('rooms', {title: 'Hulk', rooms: ['Spiderman','Hawkeye','Black Widow']});
+});
+
+
 app.get('/init', function(req, res){
 
 	var d = new Date();

@@ -1,13 +1,12 @@
 <!doctype html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title>Basic initialization</title>
+	<title>Room: Spiderman - MeSoEarly</title>
 </head>
 
-	<script src="codebase/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="codebase/dhtmlxscheduler.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-	
+	<script src="codebase/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
 <style type="text/css" media="screen">
 	html, body{
 		margin:0px;
@@ -30,10 +29,19 @@
 		dp.setTransactionMode("POST", false);
 	}
 </script>
-
+<!-- style="border:1px solid blue;" -->
 <body onload="init();">
-        <p>  Me So Early </p>
-  
+	    <div >
+		    <div class="row">
+		    	<div class=".col-md-4"></div>
+	            <div class="col-md-offset-4 col-md-5 col-md-offset-3"><h1>Spiderman Conference Room </h1></div>
+	            <div class="col-md-offset-4 col-md-5 col-md-offset-3"  >
+			        <button type="button" onclick="location.href='/information'" class="btn btn-info btn-lg">Information</button>
+			        
+			        <button type="button" onclick="location.href='/peek'" class="btn btn-success btn-lg pull-right">Peek</button>
+	            </div>
+	        </div>
+        </div>
 			<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100%;'>
 				<div class="dhx_cal_navline">
 					<div class="dhx_cal_prev_button">&nbsp;</div>
@@ -48,5 +56,6 @@
 				</div>
 				<div class="dhx_cal_data">
 				</div>
-			</div>
+			</div>		
 </body>
+
