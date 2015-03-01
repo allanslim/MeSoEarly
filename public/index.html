@@ -18,9 +18,17 @@
 
 <script type="text/javascript" charset="utf-8">
 	function init() {
+		
+		var format = scheduler.date.date_to_str("%h %i %A");
+
 		scheduler.config.xml_date="%Y-%m-%d %H:%i";
+
+		scheduler.templates.hour_scale = function(date){
+		    return format(date);
+		};
 		scheduler.init('scheduler_here',new Date(),"day");
 
+		
 		scheduler.templates.xml_date = function(value){ return new Date(value); };
 		scheduler.load("/data", "json");	
 
